@@ -353,7 +353,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
     var lastUsage: LiveUsage?
     var lastUpdated: Date?
     var lastAttempt: Date?                     // last time we *tried* to fetch (success or not)
-    let pollInterval: TimeInterval = 120       // 2 min steady-state poll
+    let pollInterval: TimeInterval = 300       // 5 min steady-state poll
     let openMinGap: TimeInterval = 90          // don't refetch on open more often than this
 
     func applicationDidFinishLaunching(_ notification: Notification) {
